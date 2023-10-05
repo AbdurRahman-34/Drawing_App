@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Drawing</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -14,13 +16,59 @@
                 <label class="title">Shape</label>
                 <ul class="options">
                     <li class="option">
-                        <span class="material-symbols-outlined"></span>
-                        
+                        <img src="icons/rectangle.svg" alt="rectangle">
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option">
+                        <img src="icons/circle.svg" alt="rectangle">
+                        <span>Circle</span>
+                    </li>
+                    <li class="option">
+                        <img src="icons/triangle.svg" alt="rectangle">
+                        <span>Triangle</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <label for="fill-color">Fill color </label>
                     </li>
                 </ul>
             </div>
+            <div class="row">
+                <label class="title">Options</label>
+                <ul class="options">
+                    <li class="option active">
+                        <img src="icons/brush.svg" alt="rectangle">
+                        <span>Brush</span>
+                    </li>
+                    <li class="option">
+                        <img src="icons/eraser.svg" alt="rectangle">
+                        <span>Eraser</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider">
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <label class="title">Colors</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#0fd859">
+                    </li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Claer Canvas</button>
+                <button class="save-img">Save as Image</button>
+            </div>
         </section>
-        <section class="drawing-board"></section>
+        <section class="drawing-board">
+            <canvas> </canvas>
+        </section>
     </div>
 </body>
 </html>
