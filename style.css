@@ -10,15 +10,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #6e3fb0;
+    background: linear-gradient(90deg, rgba(113,55,224,1) 0%, rgba(71,109,222,1) 35%, rgba(9,186,206,1) 100%);
 }
 .container{
     display: flex;
     width: 100%;
+    height: 100%;
     gap: 20px;
-    padding: 10px;
-    max-width: 1050px;
+    padding: 18px 30px;
 }
 .tools-board{
     width: 210px;
@@ -35,6 +34,9 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    background: whitesmoke;
+    padding: 3px 12px;
+    border-radius: 6px;
 }
 .option :where(span, label){
     color: #596162;
@@ -118,7 +120,7 @@ body{
     cursor: pointer;
 }
 .buttons .clear-canvas{
-    color: #6D767B;
+    color: #7137E0;
     border: 1px solid #6D767B;
     transition: all 0.3s ease;
 }
@@ -127,12 +129,9 @@ body{
     background-color:#6D767B;
 }
 .buttons  .save-img{
-    background-color: #6e3fb0;
-    border: 1px solid #6e3fb0;
+    background: linear-gradient(90deg, rgba(113,55,224,1) 0%, rgba(71,109,222,1) 35%, rgba(9,186,206,1) 100%);
+
 }
-
-
-
 
 section{
     background-color: #fff;
