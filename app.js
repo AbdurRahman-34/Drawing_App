@@ -8,7 +8,7 @@ clearCanvas = document.querySelector(".clear-canvas"),
 saveImg = document.querySelector(".save-img"),
 ctx =  canvas.getContext("2d");
 
-// Global variable with default value
+// Global variabl default value
 let prevMouseX, prevMouseY, snapshot,
 isDrawing = false,
 selectedTool = "brush",
@@ -122,6 +122,7 @@ saveImg.addEventListener("click", () => {
     link.click();
 })
 
+// All EventListener
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => isDrawing = false);
